@@ -2,7 +2,7 @@
   "name": "huckleberry",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Joshua Comeau",
+  "author": "Yohann Legrand",
   "scripts": {
     "start": "live-server --port=5000 --host=localhost ."
   },
