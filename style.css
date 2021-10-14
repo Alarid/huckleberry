@@ -8,7 +8,16 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: var(--color-gray-light);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
 }
 
 :root {
@@ -24,47 +33,56 @@ body {
 }
 
 .max-width-wrapper {
-  max-width: 570px;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 header {
   background-color: white;
-  padding-top: 24px;
   padding-bottom: 32px;
   border-bottom: 8px solid var(--color-gray-medium);
 }
 
-header .intro-chunk {
-  padding: 24px;
-  max-width: 350px;
+.intro-chunk {
+  padding-top: 68px;
+  max-width: 400px;
   font-size: 1.25rem;
 }
 
-header .intro-chunk strong {
+.intro-chunk strong {
   color: var(--color-primary);
 }
 
-header .title {
+.title {
   margin-bottom: 48px;
 }
 
 main {
-  padding: 48px 0;
+  padding: 96px 0;
+  background-color: var(--color-gray-light);
 }
 
-main .card {
+.card {
   background-color: var(--color-gray-white);
   padding: 24px;
-  padding-top: 8px;
+  margin: -24px;
   border-bottom: 8px solid var(--color-gray-medium);
 }
 
+.card p {
+  line-height: 1.4;
+}
+
 .indented-heading {
-  display: inline-block;
+  width: fit-content;
   background-color: var(--color-secondary-light);
   border-bottom: 8px solid var(--color-secondary-dark);
-  padding: 16px 40px;
-  margin: 0;
-  margin-left: -40px;
+  padding: 16px 32px;
+  margin-left: -32px;
+  margin-top: -16px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
